@@ -12,6 +12,8 @@ export interface ReducerAction {
 
 export interface TaskComponentProps {
   task: TaskInterface;
+  onUpdate: Function;
+  onDelete: Function;
 }
 
 export interface ModalProps {
@@ -21,4 +23,8 @@ export interface ModalProps {
 
 export interface CreateTaskProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export interface UpdateTaskProps {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  task: TaskInterface;
 }

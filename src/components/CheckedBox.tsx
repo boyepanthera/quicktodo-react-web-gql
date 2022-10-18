@@ -1,5 +1,3 @@
-import React from 'react';
-
 function CheckedBox(): JSX.Element {
   return (
     <svg
